@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+.body-container {
+  margin: auto;
+  max-width: 1200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tabs-container {
+  margin: auto;
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.tab-item-container {
+  padding-right: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 992px) {
+  .tab-item-container {
+    padding-right: 24px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.tab-btn {
+  font-family: "Roboto";
+  color: #9aa5b1;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .tab-btn {
+    font-size: 24px;
   }
+}
+
+.active-tab-btn {
+  border-bottom: 2px solid #0b69ff;
+  color: #3e4c59;
+}
+
+.products-list-container {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 992px) {
+  .products-list-container {
+    margin-bottom: 150px;
+  }
+}
+
+.product-item-container {
+  margin: 1rem;
+  background: #ffffff;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
